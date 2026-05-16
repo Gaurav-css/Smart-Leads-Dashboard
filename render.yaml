@@ -3,8 +3,6 @@ services:
   - type: web
     name: smart-leads-api
     runtime: node
-
-    plan: free
     rootDir: server
     buildCommand: npm install && npm run build
     startCommand: npm start
@@ -26,10 +24,10 @@ services:
   - type: web
     name: smart-leads-dashboard
     runtime: static
-    plan: free
     rootDir: client
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
+
 
     envVars:
       - key: VITE_API_BASE_URL
