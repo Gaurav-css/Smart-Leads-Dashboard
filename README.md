@@ -127,6 +127,20 @@ The project uses separate environment files for the root (Docker), server, and c
 | `DELETE` | `/api/leads/:id` | Delete a lead (Admin only). |
 | `GET` | `/api/leads/export/csv` | Download all filtered leads as CSV. |
 
+## 🚀 Deployment (Render)
+
+This project is configured for **Render** using a Blueprint (`render.yaml`).
+
+1.  Push your code to a GitHub repository.
+2.  Connect your GitHub account to [Render](https://render.com/).
+3.  Go to **Blueprints** → **New Blueprint Instance**.
+4.  Select this repository.
+5.  Render will automatically detect the `render.yaml` and prompt you for the following environment variables:
+    - `MONGODB_URI` (Use MongoDB Atlas)
+    - `JWT_SECRET` (A strong random string)
+    - `ADMIN_REGISTRATION_KEY` (Your secure key for admin signups)
+6.  Once deployed, update the `CLIENT_ORIGIN` in the Backend settings to match your new frontend URL.
+
 ## 🧪 Evaluation Compliance
 
 This project strictly adheres to the following assignment criteria:
