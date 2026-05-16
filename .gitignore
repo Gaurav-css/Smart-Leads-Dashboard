@@ -1,7 +1,11 @@
 # ─── Environment variables ────────────────────────────────────────────────────
 .env
-.env.*
-!.env.example          # always commit the example template
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
 
 # ─── Node / npm ───────────────────────────────────────────────────────────────
 node_modules/
