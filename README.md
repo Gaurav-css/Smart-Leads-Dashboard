@@ -139,6 +139,6 @@ This project strictly adheres to the following assignment criteria:
 
 ## 📧 Contact & Submission
 
-**Candidate:** [Your Name]
+**Candidate:** Gaurav
 **Assignment:** Smart Leads Dashboard Internship Submission
-**Email:** [Your Email]
+
