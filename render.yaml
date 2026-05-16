@@ -22,8 +22,9 @@ services:
         value: https://smart-leads-dashboard.onrender.com # Update this after frontend is live
 
   # ─── Frontend Client (Static Site) ──────────────────────────────────────────
-  - type: static
+  - type: static_site
     name: smart-leads-dashboard
+
     env: static
     plan: free
     rootDir: client
